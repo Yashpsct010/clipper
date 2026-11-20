@@ -422,5 +422,4 @@ with gr.Blocks(title="Autonomous AI Video Clipper", theme=theme) as demo:
             )
 
 if __name__ == "__main__":
-    # Hugging Face Spaces standard port is 7860
-    demo.launch(server_name="0.0.0.0", server_port=7860)
+    demo.queue().launch()
