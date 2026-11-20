@@ -53,12 +53,12 @@ def detect_highlights_gemini(
         
     try:
         genai.configure(api_key=api_key)
-        # Prefer gemini-2.0-flash, fallback to gemini-1.5-flash
-        model_name = "gemini-2.0-flash"
+        # Prefer gemini-3.1-flash-lite, fallback to gemini-2.5-flash-lite
+        model_name = "gemini-3.1-flash-lite"
         try:
             model = genai.GenerativeModel(model_name)
         except Exception:
-            model_name = "gemini-1.5-flash"
+            model_name = "gemini-2.5-flash-lite"
             model = genai.GenerativeModel(model_name)
             
         prompt = HIGHLIGHT_PROMPT.format(
