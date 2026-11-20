@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.log
+.env
+data/temp/*
+data/output_clips/*
+!data/output_clips/.gitkeep
+!data/temp/.gitkeep
+.git
+.pytest_cache/
